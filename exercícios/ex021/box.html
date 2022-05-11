@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightcoral;
+            height:30px;
+            width: 400px;
+            border-width: 10px;
+            /* Largura da bordar da caixa*/
+            border-style: solid;
+            border-color: darkslategray;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            /* Você pdoe usar esse modelo de padding mais detalhado para casos específicos, ou somente *padding: (o tamanho desejado)px;* - que ele dimensionada igualmente para todos os lados :'D */
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /* Você pdoe usar esse modelo de margin mais detalhado para casos específicos, ou somente *margin: (o tamanho desejado)px;* - que ele dimensionada igualmente para todos os lados :'D
+            
+            obs2: *margin: auto;* centraliza a box*/
+
+            outline-width: 1px;
+            outline-style: dashed;
+            outline-color: black;
+
+
+        }
+        a {
+            border-width: 2px;
+            border-style: dashed;
+            /* Estilos de border-style: dotted, solid, groove, double, dashed, etc. */
+            border-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Parágrafos também são exemplos box-level, mas o <a href="">link são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

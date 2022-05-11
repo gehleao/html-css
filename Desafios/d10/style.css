@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
+
+@font-face {
+    font-family: 'idroid';
+    src: url('idroid.otf') format('opentype');
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #7bd3a7;
+}
+
+header {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #4fc275, #0d4432);
+}
+
+header > h1 {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+header > p {
+    margin: 10px;
+    color: rgba(245, 245, 245, 0.575);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+nav {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background: whitesmoke;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 13px 0px #0f583cb9;
+    color: black;
+    margin: 0px 200px 10px;
+    padding: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0px 10px;
+    padding: 10px 0px;
+    color: #07573c;
+    font-family: 'idroid', sans-serif;   
+}
+
+h2 {
+    margin: 10px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.568),#c2eed89f);
+    color: #07573c;
+    font-family: 'idroid', sans-serif;
+}
+
+main > p {
+    margin: 0px 10px;
+    padding: 5px;
+    font-size: 16px;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.link-pagina-main {
+    color: #1b815f;
+}
+.link-pagina-main:hover{
+    text-decoration: underline;
+}
+
+.imagens-pagina {
+    padding: 20px 30px 20px 0px;
+    text-align: center;
+}
+.video-pagina {
+    padding: 20px 25px 20px 0px;
+    margin: 0px;
+    background-color: #0d4432;
+    text-align: center;
+}
+
+main > section {
+    box-shadow: 0px 0px 13px 0px #1b815f;
+    border-radius: 15px;
+    background: #c0f1d9be;
+    padding: 0px 0px 40px 0px;
+    margin: 20px ;
+}
+
+section > h3 {
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07573c;
+}
+
+section > p {
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.conteudo-extra {
+    padding: 15px;
+}
+
+.primeira-v {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:inline-block ;
+    font-weight: 600;
+}
+.segunda-v {
+    padding-left: 250px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.link-lista {
+    color: black;
+    text-decoration: underline;
+}
+ 
+footer {
+    padding: 5px;
+    background: #0d4432;
+    color: white;
+    text-align: center;
+}
+.link-rodape {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
