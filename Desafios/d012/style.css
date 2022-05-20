@@ -101,7 +101,7 @@ section.img > p {
     color: bisque;
     width: 400px;
     background: #d9a5436d;
-
+    display: inline-block;
 }
 
 footer {
