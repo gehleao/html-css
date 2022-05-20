@@ -1,47 +1,122 @@
 @charset "UTF-8";
 
-    * {
-        margin: 0px;
-        padding: 0px;  
-     }
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Martel&display=swap');
 
-    body {
-        min-height: 100vh;
-        background: #D9A443;
-        }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none; 
+     
+}
+/*
+#ECBC64
+#D9A443
+#F2B035
+#8C661F
+*/
 
-        /*min-width: 300px;
-        max-width: 800px;*/
+body {
+    min-height: 100vh;
+}
+
+/* min-width: 300px;
+max-width: 800px; */
     
-    header {
-        margin: 10px;
-        padding: 10px; 
-        border: 2px dashed black; 
-    }
+header {  
+    padding: 30px 30px 0px 30px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 2em;
+    color: antiquewhite;
+    display: flex;
+    gap: 250px;
+    background:  rgb(156, 111, 28);
+    
+    
+}
 
-    .imagem-topo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 10px;
-    }
+header section {
+    padding: 20px;
+    columns: 2;
+}
 
-    .titulo-topo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 30px 0px 5px 0px;
-    }
+.logo {
+    height: 100px;
+}
+    
+main {
+    padding: 20px 0px 10px 0px;
+    text-align: justify;
+    border-top: 2px solid black;
+    border-bottom: 2px dashed black;
+    font-family: 'Martel', serif;
+    color: bisque;
+    background: rgb(156, 111, 28);
+}
+main h1 {
+    padding-left: 30px;
+    font-size: 2em;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
 
-    main {
-        margin: 25px 0px 10px 30px;
-        text-align: justify;
-    }
+main p {
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-    footer {
-        color: white;
-        background-color: black;
-        text-align: center;
-        padding: 3px;
+main a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
 
-    }
+main a:hover {
+    background-color: var(--cor2);
+}
+
+section {
+    padding-left: 30px;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    word-spacing: 5px;
+    line-height: 2em;
+}
+
+section.normal {
+    
+}
+
+section.img {
+    background: rgb(156, 111, 28);
+    
+}
+
+section.img > p {
+    width: 400px;
+    background: #d9a5436d;
+
+}
+
+footer {
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-family: 'Martel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    background: #D9A443;
+}
+
+footer a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    background-color: var(--cor1);
+}
+
+
