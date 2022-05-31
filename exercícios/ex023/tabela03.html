@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope na tabela grande</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background: #ffcb8c4e;
+        }
+
+        .t1 {
+            padding: 5px 0px;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        td {
+            text-align: center;
+            font-size: 15px;
+            padding: 4px 0px;
+        }
+
+        thead {
+            background-color:  rgba(0, 0, 139, 0.763);
+            color: #D3EDFC;
+        }
+        
+        tfoot {
+            background-color:  rgba(0, 0, 139, 0.763);
+            color: #00489A;
+        }
+
+        .total {
+            padding-right: 15px;
+        }
+
+        .num {
+            text-align: right;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+     <!--Anatomia da tabela grande
+    table
+
+        CAPTION - Legenda
+        thead → { tr, td, th}
+        tbody → { tr, td, th}
+        tfoot → { tr, td, th}
+    -->
+    <h1>Geysa Doces</h1>
+
+    <table>
+        <caption>Listagem dos Doces</caption>
+        <thead>
+            <tr> 
+            <th style="width: 50px;"></th>
+            <th scope="col" style="width: 80px;" class="t1">Massas</th>
+            <th scope="col" style="width: 100px;" class="t1">Sabores</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                    <td>♥</td>
+                    <td >Chocolate Branco</td>
+                    <td >Leite Ninho - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>Chocolate ao Leite</td>
+                    <td>Doce de Leite - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Chocolate colorido</td>
+                    <td>Morango - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Morango</td>
+                    <td>Coco - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Belga</td>
+                    <td>Nutella - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Meio Amargo</td>
+                    <td>Paçoca - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Cacau 70%</td>
+                    <td>Churros - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Café - Especiais</td>
+                </tr>
+
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Maçã do Amor - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Ovomaltine - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Romeu e Julieta - Especiais</td>
+                </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th class="total" scope="row">Total</th>
+                <td class="num" scope="row">7</td>
+                <td class="num" scope="row">11</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
