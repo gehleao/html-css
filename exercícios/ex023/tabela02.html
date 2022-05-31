@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+        td {
+            text-align: center;
+            padding: 4px 0px;
+        }
+
+        thead {
+            background-color:  rgba(0, 0, 139, 0.763);
+            color: rgb(243, 189, 89);
+        }
+        
+        tfoot {
+            background-color:  rgba(0, 0, 139, 0.763);
+            color: rgb(243, 189, 89);
+        }
+
+        .total {
+            padding-right: 15px;
+        }
+
+        .num {
+            text-align: right;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--Anatomia da tabela grande
+    table
+        thead → { tr, td, th}
+        tbody → { tr, td, th}
+        tfoot → { tr, td, th}
+    -->
+
+    <table>
+        <thead>
+            <tr> 
+            <th></th>
+            <th>Massas</th>
+            <th>Sabores</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>♥</td>
+                    <td >Chocolate Branco</td>
+                    <td >Leite Ninho - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>Chocolate ao Leite</td>
+                    <td>Doce de Leite - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Chocolate colorido</td>
+                    <td>Morango - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Morango</td>
+                    <td>Coco - Clássicos</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Belga</td>
+                    <td>Nutella - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Meio Amargo</td>
+                    <td>Paçoca - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td >Cacau 70%</td>
+                    <td>Churros - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Café - Especiais</td>
+                </tr>
+
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Maçã do Amor - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Ovomaltine - Especiais</td>
+                </tr>
+                <tr>
+                    <td>♥</td>
+                    <td>-</td>
+                    <td>Romeu e Julieta - Especiais</td>
+                </tr>
+                
+                
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th class="total">Total</th>
+                <td class="num">7</td>
+                <td class="num">11</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
