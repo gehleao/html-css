@@ -1,170 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclagem de Células</title>
+    <title>Tabelas</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        caption {
-            font-size: 1.5em;
-            padding-bottom: 10px;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         table {
-            width: 500px;
             border-collapse: collapse;
-            position: relative;
-        }
-
-        tbody > tr:nth-child(odd) /*odd significar ímpar */ {
-            background: #D3EDFC;
-            color: #936341;
-        }
-
-        tbody > tr:nth-child(even) /* even significa par */ {
-            background: rgb(77, 167, 209);
-            color: #D3EDFC;
-        }
-
-        .t1 {
-            padding: 5px 0px;
-        }
-
-        td, th {
-            border: 1px solid black;
+            width: 200px;
         }
 
         td {
+            border: 1px solid black;
+            padding: 10px;
             text-align: center;
-            font-size: 15px;
-            padding: 4px 0px;
-            font-weight: 700;
-        }
-
-        thead {
-            background-color:  rgb(77, 167, 209);
-            color: #D3EDFC;
-            /* #D3EDFC - azul claro */
-        }
-
-        thead > tr > th {
-            position: sticky;
-            top: 0;
-            background-color: rgb(77, 167, 209);
-        }
-        
-        tfoot {
-            background-color:  rgb(77, 167, 209);
-            color: #D3EDFC;
-        }
-
-        .total {
-            padding-right: 15px;
-        }
-
-        .num {
-            text-align: right;
-            padding-right: 15px;
         }
     </style>
 </head>
 <body>
-    <!--Anatomia da tabela grande
-    table
+    <h1>Mesclagem de Células</h1>
+    <table>
 
-        CAPTION - Legenda
-        thead → { tr, td, th}
-        tbody → { tr, td, th}
-        tfoot → { tr, td, th}
-    -->
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+           
+        </tr>
+            
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
 
-    <h1>Geysa Doces</h1>
+        <tr>
+            
+            <td>H</td>
+            <td colspan="2">I</td>
+        </tr>
+
+        <tr>
+            
+            <td>K</td>
+            <td colspan="2">L</td>
+        </tr>
+
+    </table>
+
+    <br>
 
     <table>
-        <caption>Listagem dos Doces</caption>
-        <thead>
-            <tr> 
-            <th style="width: 50px;"></th>
-            <th scope="col" style="width: 80px;" class="t1">Massas</th>
-            <th scope="col" style="width: 100px;" class="t1">Sabores</th>
-            </tr>
-        </thead>
 
-        <tbody>
-                <tr>
-                    <td>♥</td>
-                    <td>Chocolate Branco</td>
-                    <td>Leite Ninho - Clássicos</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td>Chocolate ao Leite</td>
-                    <td>Doce de Leite - Clássicos</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td>Chocolate colorido</td>
-                    <td>Morango - Clássicos</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td >Morango</td>
-                    <td>Coco - Clássicos</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td >Belga</td>
-                    <td>Nutella - Especiais</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td >Meio Amargo</td>
-                    <td>Paçoca - Especiais</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td>Cacau 70%</td>
-                    <td>Churros - Especiais</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td>-</td>
-                    <td>Café - Especiais</td>
-                </tr>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+           
+        </tr>
+            
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
 
-                <tr>
-                    <td>♥</td>
-                    <td>-</td>
-                    <td>Maçã do Amor - Especiais</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td>-</td>
-                    <td>Ovomaltine - Especiais</td>
-                </tr>
-                <tr>
-                    <td>♥</td>
-                    <td>-</td>
-                    <td>Romeu e Julieta - Especiais</td>
-                </tr>
-        </tbody>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
 
-        <tfoot>
-            <tr>
-                <th class="total" scope="row">Total</th>
-                <td class="num" scope="row"><strong>7</strong></td>
-                <td class="num" scope="row"><strong>11</strong></td>
-            </tr>
-        </tfoot>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <table>
+
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+           
+        </tr>
+            
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+
+    </table>
+    
+    <br>
+
+    <table>
+
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+           
+        </tr>
+            
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+
+        <tr>
+            
+            <td>H</td>
+            
+        </tr>
+
+        <tr>
+            
+            
+            <td colspan="2">L</td>
+        </tr>
+
     </table>
 </body>
 </html>
